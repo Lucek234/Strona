@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>piiip</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+    integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
+    crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+    integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <div><a href="index.html">zoo z lamami</a></div>
+        <div><a href="szachy.html">szachy</a></div>
+        <div><a href="kalkulator.html">obliczenia matematyczne</a></div>
+    </nav>
+    <script>
+        function fun(e){
+            if(e.target.textContent==='abc'){
+            e.target.textContent = "xyz";
+        }
+            else{
+                e.target.textContent = "dlaczego deszcz siedzi w więzieniu      bo napadał";
+            }
+        }
+    </script>
+    
+    <button onclick="fun(event)">abc</button>
+    <div id="board1" style="width: 400px"></div>
+
+    <script>
+        var board1 = Chessboard('board1', 'start')
+    </script>
+    <!-- <div id="board2" style="width: 400px"></div> -->
+<button id="startBtn">Start Position</button>
+<button id="clearBtn">Clear Board</button>
+
+<div id="zart"></div>
+<button id="kliknijzart">zabaczzart</button>
+
+
+
+
+<script>$('#startBtn').on('click', board1.start)
+$('#clearBtn').on('click', board1.clear)
+$("#kliknijzart").click(function(){
+   var zarty=["dlaczego desz siedzi w więzieniu? bo napadał","Co czuje czarodziej kiedy jest zawiedziony? rozczarowanie","lal"]
+   var r = Math.floor(Math.random() * zarty.length)
+   var zart=zarty[r]
+   
+   
+   
+    $('#zart').text(zart)
+})
+
+
+
+
+
+</script>
+    
+</body>
+</html>

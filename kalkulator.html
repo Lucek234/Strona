@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>lama</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+   
+</head>
+
+
+<body>
+    <nav>
+        <div><a href="index.html">zoo z lamami</a></div>
+        <div><a href="szachy.html">szachy</a></div>
+        <div><a href="kalkulator.html">obliczenia matematyczne</a></div>
+    </nav>
+    <div>
+        <p><label for="liczba-a">pierwsza liczba:</label>
+        <input type="text" id="liczba-a" name="fname"></p>
+        <p><label for="liczba-b">druga liczba:</label>
+        <input type="text" id="liczba-b" name="fname"></p>
+        <p id="wynik"></p>
+ <p id="kruliki"></p>
+
+ 
+ 
+ 
+        <button id="oblicz">Oblicz</button>
+        <script>
+function oblicz(){
+var x = $('#liczba-a').val();
+var y = $('#liczba-b').val();
+var z  = parseInt(x) + parseInt(y);
+$("#wynik").text(z);
+$("#liczba-a").val(y)
+$("#liczba-b").val(z)
+for(var i = 0; i<z; i++){
+$("#kruliki").after("🐰")
+
+
+
+}
+
+
+
+
+
+}
+$("#oblicz").click(oblicz)
+
+
+            </script>
+         
+
+
+
+
+
+    
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+
+
+    background: purple;
+    color: yellowgreen;
+}nav div{
+    display: inline-block;
+    padding: 2rem;
+    margin: 2rem;
+    border: 5px solid rgba(3, 3, 54, 0.774);
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgb(10, 224, 10);
+    background: rgb(42, 140, 179);
+}
+
+nav div a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+nav div:hover{
+    box-shadow: 5px 5px 5px rgb(196, 35, 7);
+}
+p {
+    border: solid rgba(22, 11, 184, 0.61);
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgb(160, 21, 56);
+    border-radius: 7px;
+}
+p:hover{
+    box-shadow: 5px 5px 5px rgb(177, 207, 42);
+
+}
+#zart{margin: 1rem;
+border: 1px solid rgb(8, 146, 19);
+padding:1rem;
+box-shadow:5px 5px 5px rgb(255, 0, 0)} 
+#oblicz{
+    background:rgb(111, 8, 143);
+    color: white;
+    padding: 2rem;
+    font-size: 2rem;
+}
