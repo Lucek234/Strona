@@ -9,8 +9,8 @@ nav {
     color: yellowgreen;
 }nav div{
     display: inline-block;
-    padding: 2rem;
-    margin: 2rem;
+    padding: 2rem 1rem;
+    margin: 2rem 1rem;
     border: 5px solid rgba(3, 3, 54, 0.774);
     border-radius: 8px;
     box-shadow: 5px 5px 5px rgb(10, 224, 10);
@@ -46,4 +46,26 @@ box-shadow:5px 5px 5px rgb(255, 0, 0)}
     color: white;
     padding: 2rem;
     font-size: 2rem;
+
+
 }
+
+
+#loma{font-size: 3rem;position: absolute;}
+#loma:hover{
+
+
+
+   
+    
+ 
+    position: absolute;
+    
+    
+    margin:-60px 0 0 -60px;
+    
+    animation:spin 0.4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
